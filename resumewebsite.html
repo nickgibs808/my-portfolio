@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicholas Gibson | Portfolio</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+            scroll-behavior: smooth; /* Enables smooth scrolling */
+        }
+
+        body {
+            background: #f5f5f5;
+            color: #222;
+            text-align: center;
+        }
+
+        /* Navigation Bar */
+        nav {
+            position: fixed;
+            width: 100%;
+            background: white;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: #007B7F;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #004B4F;
+        }
+
+        /* Hero Section with Background Image */
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: url('IMG_8023.jpg') no-repeat center top/cover;
+            position: relative;
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        /* Sections */
+        section {
+            padding: 80px 20px;
+            max-width: 900px;
+            margin: auto;
+            text-align: left;
+        }
+
+        h2 {
+            font-size: 2rem;
+            text-transform: uppercase;
+            color: #007B7F;
+            border-bottom: 3px solid #007B7F;
+            display: inline-block;
+            padding-bottom: 5px;
+            margin-bottom: 30px;
+        }
+
+        /* Experience & Project Cards */
+        .experience, .project {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            border: 2px solid #007B7F;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .experience:hover, .project:hover {
+            transform: scale(1.05);
+        }
+
+        .experience h3, .project h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: #004B4F;
+        }
+
+        .experience p, .project p {
+            opacity: 0.8;
+        }
+
+        /* Contact Section */
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .contact-links a {
+            text-decoration: none;
+            background: #007B7F;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .contact-links a:hover {
+            background: #004B4F;
+        }
+
+        /* Footer */
+        footer {
+            background: #e8f5f5;
+            padding: 20px;
+            margin-top: 40px;
+            border-top: 2px solid #007B7F;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Nicholas Gibson</h1>
+            <p>Computer Science | Security Science | Problem Solver</p>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            Driven and self-motivated **STEM professional** passionate about **problem-solving, collaboration, and continuous learning**.  
+            Seeking opportunities to contribute my skills to **innovative projects** while gaining **hands-on experience** in the field.
+        </p>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <h2>Professional Experience</h2>
+
+        <div class="experience">
+            <h3>Ross Dress for Less – Sales Associate</h3>
+            <p>Assisted customers with product locations, organized stockroom inventory, and handled cashier operations.</p>
+        </div>
+
+        <div class="experience">
+            <h3>McMinnville Community Media – Production Intern</h3>
+            <p>Captured and broadcasted local sports and community events, utilizing professional camera equipment.</p>
+        </div>
+
+        <div class="experience">
+            <h3>Hawaii 503 – Cook/Cashier</h3>
+            <p>Grilled and prepared Hawaiian-style dishes under high-pressure conditions.</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="project">
+            <h3>Personal Portfolio Website</h3>
+            <p>Built and designed a fully responsive portfolio website using HTML and CSS.</p>
+        </div>
+
+        <div class="project">
+            <h3>ICS 111 Final Project</h3>
+            <p>Developed an interactive web-based game using JavaScript and HTML5 Canvas.</p>
+        </div>
+    </section>
+
+    <!-- Extracurricular Activities -->
+    <section id="extracurricular">
+        <h2>Extracurricular & Personal Involvement</h2>
+
+        <div class="experience">
+            <h3>Maui Wildfire Fundraiser – Coordinator</h3>
+            <p>Organized a donation drive raising over $4,500 to support first responders in Maui.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Get in Touch</h2>
+        <div class="contact-links">
+            <a href="mailto:nickgibs39@gmail.com">📧 Email</a>
+            <a href="https://www.linkedin.com/in/nicholas-gibson-3571b1345/">🔗 LinkedIn</a>
+            <a href="https://github.com/nicholas-gibson">💻 GitHub</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Nicholas Gibson | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
